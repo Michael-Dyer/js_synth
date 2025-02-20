@@ -1,10 +1,29 @@
 import Synth from "./synth.js";
     
     let context;
-    
+    let waveShape = "sine";
+
+    const form = document.querySelector("form");
+    const log = document.querySelector("#log");
+
+    form.addEventListener(
+        "submit",
+        (event) => {
+          const data = new FormData(form);
+          let output = "";
+          for (const entry of data) {
+            output = `${output}${entry[0]}=${entry[1]}\r`;
+            waveShape = entry[1];
+          }
+          log.innerText = output;
+          event.preventDefault();
+        },
+        false,
+      );
+      
         
     let onNotes = [];
-    let waveShape = "sine";
+    
     let synth = new Synth();
     
 
@@ -29,6 +48,9 @@ import Synth from "./synth.js";
     
     function getMIDIMessage(message) {
         context = new (window.AudioContext)();
+        
+
+
         var command = message.data[0] >> 4;
         var note = message.data[1];
         var velocity = message.data[2]
