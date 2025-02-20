@@ -60,7 +60,7 @@ import Synth from "./synth.js";
         } else if (command === 9) { // note on
             noteOn(note, velocity);
         } else if (command === 14) {
-                setPitchBend(((velocity * 128.0 + note)-8192)/8192.0);
+                //setPitchBend(((velocity * 128.0 + note)-8192)/8192.0);
         } else {
             // console.log('midi message not supported');
         }
