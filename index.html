@@ -7,14 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 
-    <!-- Set up Web MIDI polyfill -->
-<!--
-    <script src='http://cwilso.github.com/WebMIDIAPIShim/WebMIDIAPI.js'></script>
--->
-    <!-- Monkey-patch all the audio calls so it works on compliant AudioContext implementations -->
-<!--
-    <script src="http://cwilso.github.io/AudioContext-MonkeyPatch/AudioContextMonkeyPatch.js"></script>
--->
+
     <script type="text/javascript" src="js/midi.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     
@@ -45,7 +38,7 @@
 
         let soundElement = document.querySelector("#synthbox");
         soundElement.addEventListener("click", playRandomSound, false);
-        addEventListener("midimessage", playNote);
+        
     
         </script>
         
