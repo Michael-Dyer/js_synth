@@ -1,58 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-    <meta name="viewport" content="width=916,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=916,initial-scale=1">
 
 
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 
 
-    
-    <script type="module" src="js/main.js"></script>
-    
-    
-    
+
+  <script type="module" src="js/main.js"></script>
+
+
+
 </head>
 
 <body>
 
-  
-
-    
-    <div id="synthbox">
 
 
-    </div>
-    <div id="keybox" touch-action="none">
-        <div id="blackkeys">
-            <span id="k61" class="black key"></span><span id="k63" class="black key"></span><span class="spacer"></span><span id="k66" class="black key"></span><span id="k68" class="black key"></span><span id="k70" class="black key"></span><span class="spacer"></span><span id="k73" class="black key"></span><span id="k75" class="black key"></span><span class="spacer"></span><span id="k78" class="black key"></span><span id="k80" class="black key"></span><span id="k82" class="black key"></span>
-        </div>
-        <span id="k60" class="white key"></span><span id="k62" class="white key"></span><span id="k64" class="white key"></span><span id="k65" class="white key"></span><span id="k67" class="white key"></span><span id="k69" class="white key"></span><span id="k71" class="white key"></span><span id="k72" class="white key"></span><span id="k74" class="white key"></span><span id="k76" class="white key"></span><span id="k77" class="white key"></span><span id="k79" class="white key"></span><span id="k81" class="white key"></span><span id="k83" class="white key"></span>
-    </div>
-   
-   
+
+  <div id="synthbox">
+
+
+  </div>
+  <div id="keybox" touch-action="none">
+  <div class="white-keys">
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+    <div class="white-key"></div>
+  </div>
+  <div class="black-keys">
+    <div class="black-key"></div>
+    <div class="black-key"></div>
+    <div class="black-key space"></div>
+    <div class="black-key"></div>
+    <div class="black-key"></div>
+    <div class="black-key"></div>
+    <div class="black-key space"></div>
+    <div class="black-key"></div>
+    <div class="black-key"></div>
+    <div class="black-key space"></div>
+    <div class="black-key"></div>
+    <div class="black-key"></div>
+    <div class="black-key"></div>
+    <div class="black-key space"></div>
+    <div class="black-key"></div>
+    <div class="black-key"></div>
+  </div>
+  </div>
+  <div>
     <form>
-        <fieldset>
-          <legend>Please select a waveform:</legend>
-          <div>
-            <input type="radio" id="contactChoice1" name="wave" value="sine" />
-            <label for="contactChoice1">sine</label>
-            <input type="radio" id="contactChoice2" name="wave" value="square" />
-            <label for="contactChoice2">square</label>
-            <input type="radio" id="contactChoice3" name="wave" value="sawtooth" />
-            <label for="contactChoice3">sawtooth</label>
-            <input type="radio" id="contactChoice3" name="wave" value="triangle" />
-            <label for="contactChoice3">triangle</label>
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </fieldset>
-      </form>
-      <pre id="log"></pre>
-      
-        
+      <fieldset>
+        <legend>Please select a waveform:</legend>
+        <div>
+          <input type="radio" id="contactChoice1" name="wave" value="sine" />
+          <label for="contactChoice1">sine</label>
+          <input type="radio" id="contactChoice2" name="wave" value="square" />
+          <label for="contactChoice2">square</label>
+          <input type="radio" id="contactChoice3" name="wave" value="sawtooth" />
+          <label for="contactChoice3">sawtooth</label>
+          <input type="radio" id="contactChoice3" name="wave" value="triangle" />
+          <label for="contactChoice3">triangle</label>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <pre id="log"></pre>
+
+
 
 
 </body>
